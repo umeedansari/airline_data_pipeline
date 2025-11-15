@@ -77,24 +77,9 @@ The Gold Layer job runs as a **multi-task job** in Databricks, orchestrating dyn
 
 ---
 
-## 📁 Domains Covered
+## 📊 Dashboard – Insights from Gold Layer Data
+The dashboard leverages curated and fully transformed datasets from the Gold Layer to provide rich analytics and business insights. By using dimension and fact tables processed through the data pipeline.
 
-This pipeline supports the following business domains across all layers:
+<img width="1239" height="674" alt="image" src="https://github.com/user-attachments/assets/2d12e518-e173-41c8-a545-f272e6021e2d" />
 
-- **Airports**
-- **Bookings**
-- **Flights**
-- **Passengers**
-
----
-
-## ✅ Summary
-
-| Layer   | Format            | Tech Used              | Purpose                                  | Job Type             |
-|---------|-------------------|------------------------|------------------------------------------|----------------------|
-| Bronze  | Delta (streaming) | Auto Loader            | Raw data ingestion                       | Standard Job (per domain) |
-| Silver  | Delta Live Tables | DLT + Expectations     | Cleaned, validated, structured data      | DLT Pipeline Job     |
-| Gold    | Delta (batch)     | Spark SQL + Notebooks  | Dimension & Fact modeling for analytics  | Notebook Jobs (Dim & Fact) |
-
----
 
